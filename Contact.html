@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        SFCV : Spécialiste Français n°1 des Caves à Vin
+    </title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+</head>
+
+<body>
+    <div id="entete">
+        <img src="logo.png" alt="Image du logo des caves à vin">
+        <h1>SFCV</h1>
+        <h3>N°1 des caves à vins</h3> <!-- J'ai mis un h2 et non un h3 car dans le validateur W3 demande à mettre h2-->
+    </div>
+    <hr>
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="produits.html">Produits</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <p>Demandez-nous vite notre catalogue gratuit ! <br> Il vous sera livré dans les meilleurs délais.</p>
+    <div id="bloc">
+        <form name="demande" id="demande" action="mailto:ton@email.com" method="POST" enctype="text/plain">
+
+            <!-- Civilité -->
+            <label>Civilité :</label>
+            <input type="radio" name="civilite" value="1"> Monsieur
+            <input type="radio" name="civilite" value="2"> Madame<br><br>
+
+            <!-- Nom -->
+            <label>Nom :</label>
+            <input type="text" name="nom" id="nom" value=""><br><br>
+
+            <!-- Prénom -->
+            <label>Prénom :</label>
+            <input type="text" name="prenom" id="prenom" value=""><br><br>
+
+            <!-- Adresse -->
+            <label>Adresse :</label><br>
+            <textarea name="adresse" id="adresse"></textarea><br><br>
+
+            <!-- Ville -->
+            <label>Ville :</label>
+            <input type="text" name="ville" id="ville" value=""><br><br>
+
+            <!-- Code postal -->
+            <label>Code postal :</label>
+            <input type="text" name="codepostal" id="codepostal" value=""><br><br>
+
+            <!-- Newsletter -->
+            <label>
+                <input type="checkbox" name="newslettre" value="oui">
+                Recevoir la newsletter
+            </label><br><br>
+
+            <!-- Email -->
+            <label>Courriel :</label><br>
+            <input type="email" name="email" id="email" value=""><br><br>
+
+            <!-- Bouton envoyer -->
+            <input type="submit" name="action" value="Envoyer">
+
+        </form>
+        <p>Ce site a fait l'objet d'une déclaration auprès de la Commission Nationale Informatique et Libertés (CNIL).
+            Conformément aux dispositions de la loi<br>
+        Informatiques et libertés du 6/01/1978, vous disposez d'un droit de modification, de rectification et
+            d'oppostition/suppresion des données vous concernant,<br>
+        ce par simple demande à : info@sfcv.com</p>
+        <br>
+        <p>N'hésitez pas à prendre contact avec l'équipe SFCV. Nous répondrons à toutes vos questions sur l'aménagement de votre cave ou le choix de votre<br>
+        armoire à vin. Tous les conseils de professionnels pour conserver vos meilleurs vins en toute sécurité pour le plaisir de les déguster en toute convivialité.</p>
+        
+    </div>
+    <hr>
+    <div id="pied">
+        <p>© SFCV - <a href="Mentions.html">Mentions légales</a></p>
+        <p>L'abus d'alcool est dangereux pour la santé, à consommer avec modération</p>
+    </div>
+</body>
+
+</html>
